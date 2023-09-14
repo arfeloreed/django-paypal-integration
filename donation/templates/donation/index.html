@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_title %}Donate{% endblock page_title %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static "donation/index.css" %}">
+{% endblock css %}
+
+{% block content %}
+<div id="donation-con" class="container mt-5 bg-white text-center rounded-4 p-3">
+  <h1 class="fw-bold text-danger text-uppercase display-3 my-5">Donate</h1>
+  <hr>
+  <p class="h4 text-dark">Your help is deeply appreciated.</p>
+  <i class="fa-solid fa-heart fa-3x text-danger"></i>
+  <hr>
+  <p>Send a $5.00 donation.</p>
+  {{form.render}}
+  <br>
+</div>
+{% endblock content %}

@@ -1,0 +1,10 @@
+.con {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+#payment-success-con {
+  max-width: 550px;
+}
